@@ -3,10 +3,10 @@ apiVersion: v1
 metadata:
    name: &PODNAME mongodb
 spec:
-   selector:
-     pod: *PODNAME
-   ports:
-   - name: mongo
-     protocol: TCP
-     port: 27017
-   targetPort: mongodb-port
+  selector:
+    pod: *PODNAME
+  ports:
+  - name: mongo
+    protocol: TCP
+    port: 27017
+  targetPort: mongodb-port
